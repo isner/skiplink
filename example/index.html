@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>skiplink example</title>
+  <meta charset="utf-8">
+  <script src="../dist/skiplink.min.js"></script>
+</head>
+<body>
+
+  <header>
+    <div>
+      <a id="ex-one" href="#">Skip to main content</a>
+    </div>
+    <div>
+      <a id="ex-two" href="#footer-content">Skip to footer content</a>
+    </div>
+    <nav>
+      <h2>Navigation</h2>
+      <a href="#">Example navigation link</a>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <h2>Main content</h2>
+    <p>This is the main content area.</p>
+    <p>There might be a lot of <a href="#">important stuff</a> here.</p>
+  </main>
+
+  <footer id="footer-content">
+    <h2>Footer</h2>
+    <p>This is the footer.</p>
+    <p>There might be a lot of <a href="#">copyright stuff</a> here.</p>
+  </footer>
+
+  <script>
+    // Basic usage: Provide element references for both
+    // the skiplink anchor itself and the element that
+    // should be skipped to.
+    var anchor1 = document.getElementById('ex-one');
+    var target1 = document.getElementById('main-content');
+    new Skiplink(anchor1, target1);
+
+    // Alternate usage: Pass in only an element reference
+    // for the anchor. A selector for the target element
+    // must be provided as the "href" value on the anchor.
+    var anchor2 = document.getElementById('ex-two');
+    new Skiplink(anchor2);
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "name": "skiplink",
+  "version": "1.0.0",
+  "description": "Adds skiplink functionality to an existing anchor",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Matt Isner <isnerms@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "duo": "^0.15.3",
+    "fs-extra": "^0.24.0",
+    "gulp": "^3.9.0",
+    "uglify-js": "^2.4.24"
+  }
+}
