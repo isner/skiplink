@@ -25,13 +25,13 @@ Include the contents of `dist/skiplink.js` (or the minified `dist/skiplink.min.j
 
 Use the `Skiplink` constructor to add skiplink functionality to an existing anchor element. The anchor used should be naturally focusable.
 
-## `Skiplink(anchorEl[, targetEl])`
+## Skiplink(anchorEl[, targetEl])
 
-### `anchorEl` HTMLElement
+### anchorEl {HTMLElement}
 
 An anchor you wish to use as a skiplink. It should be naturally focusable.
 
-### `targetEl` HTMLElement (optional)
+### [targetEl] {HTMLElement}
 
 The element that receive focus when the skiplink is activated. On blur it will lose tabindex and no longer be naturally focusable until the skiplink is again activated.
 
